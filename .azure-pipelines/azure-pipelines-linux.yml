@@ -43,7 +43,6 @@ jobs:
   - script: |
         export CI=azure
         export GIT_BRANCH=$BUILD_SOURCEBRANCHNAME
-        export UPLOAD_ON_BRANCH="master"
         .scripts/run_docker_build.sh
     displayName: Run docker build
     env:
