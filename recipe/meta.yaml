@@ -20,20 +20,23 @@ build:
   number: 0
   skip: True  # [not linux]
 
-requirements: &reqs
+requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - {{ compiler('cuda') }}  # [cuda_compiler_version != "None"]
     - libgomp  # [linux]
+{% if cuda_compiler_version != "None" %}
+    - {{ compiler('cuda') }}
   host:
-    - cudnn  # [cuda_compiler_version != "None"]
-  run:
-    - _darknet_mutex * gpu  # [cuda_compiler_version != "None"]
-    - _darknet_mutex * cpu  # [cuda_compiler_version == "None"]
+    - cudnn
   run_constrained:
-    - __cuda {{ cuda_compiler_version }}  # [cuda_compiler_version != "None"]
-
+    - __cuda {{ cuda_compiler_version }}
+  run:
+    - _darknet_mutex * gpu
+{% else %}
+  run:
+    - _darknet_mutex * cpu
+{% endif %}
 
 test:
   commands:
