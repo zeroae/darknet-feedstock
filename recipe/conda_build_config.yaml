@@ -1,0 +1,4 @@
+channel_sources:
+  - scraawl,conda-forge,defaults
+channel_targets:
+  - scraawl main
