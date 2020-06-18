@@ -1,15 +1,17 @@
 {% set name = "darknet" %}
-{% set version = "0.0.20200524" %}
-{% set git_rev = "0ff2343" %}
+{% set version = "0.0.20200615" %}
+{% set git_rev = "e08a818" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}.g{{ git_rev }}
 
 source:
+  # NOTE: According to PJReddie, AlexeyAB's is the canonical version of darknet
+  #       c.f.: https://twitter.com/pjreddie/status/1253891078182199296
   # NOTE: Upstream *does not* tag the repo
-  git_url: https://github.com/pjreddie/darknet
-  git_rev: 0ff2343
+  git_url: https://github.com/AlexyAB/darknet
+  git_rev: {{ git_rev }}
   # NOTE: Upstream repo is very large.
   #       If build fails to pull the correct revision, increase the git-depth
   git_depth: 1
@@ -17,7 +19,7 @@ source:
     -  0001-Accept-a-different-toolchain.patch
 
 build:
-  number: 1
+  number: 0
   skip: True  # [not linux]
 
 requirements:
@@ -40,19 +42,16 @@ requirements:
 
 test:
   commands:
-    - darknet
     - test -x $PREFIX/bin/darknet
     - test -f $PREFIX/include/darknet.h
     - test -f $PREFIX/lib/libdarknet.so
     - test -f $PREFIX/lib/libdarknet.a
+    - darknet
 
 outputs:
   - name: {{ name|lower }}
     files:
       - bin/darknet
-
-  - name: lib{{ name|lower }}
-    files:
       - include/darknet.h
       - lib/libdarknet.so
       - lib/libdarknet.a
