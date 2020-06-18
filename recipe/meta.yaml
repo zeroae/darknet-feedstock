@@ -17,7 +17,7 @@ source:
     -  0001-Accept-a-different-toolchain.patch
 
 build:
-  number: 0
+  number: 1
   skip: True  # [not linux]
 
 requirements:
@@ -50,6 +50,9 @@ outputs:
   - name: {{ name|lower }}
     files:
       - bin/darknet
+
+  - name: lib{{ name|lower }}
+    files:
       - include/darknet.h
       - lib/libdarknet.so
       - lib/libdarknet.a
