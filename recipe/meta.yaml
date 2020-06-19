@@ -68,7 +68,7 @@ about:
   license_file: LICENSE
   summary: Darknet is an open source neural network framework written in C and CUDA.
 
-  dev_url: https://github.com/pjreddie/darknet
+  dev_url: https://github.com/AlexeyAB/darknet
 
 extra:
   recipe-maintainers:
