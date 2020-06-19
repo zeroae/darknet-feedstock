@@ -10,13 +10,13 @@ source:
   # NOTE: According to PJReddie, AlexeyAB's is the canonical version of darknet
   #       c.f.: https://twitter.com/pjreddie/status/1253891078182199296
   # NOTE: Upstream *does not* tag the repo
-  git_url: https://github.com/AlexyAB/darknet
+  git_url: https://github.com/AlexeyAB/darknet
   git_rev: {{ git_rev }}
   # NOTE: Upstream repo is very large.
   #       If build fails to pull the correct revision, increase the git-depth
   git_depth: 1
-  patches:
-    -  0001-Accept-a-different-toolchain.patch
+  #patches:
+  #  -  0001-Accept-a-different-toolchain.patch
 
 build:
   number: 0
