@@ -1,5 +1,12 @@
 # documentation: https://conda-forge.org/docs/maintainer/conda_forge_yml.html
 # Set channel sources and targets through conda_build_config.yaml instead.
+channels:
+  sources:
+    - zeroae
+    - conda-forge
+    - defaults
+  targets:
+    - [zeroae, main]
 azure:
   user_or_org: zeroae
   project_name: feedstock-builds
