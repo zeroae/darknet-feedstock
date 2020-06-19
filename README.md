@@ -3,7 +3,7 @@ About darknet
 
 Home: https://pjreddie.com/darknet
 
-Package license: MIT
+Package license: LicenseRef-darknet-public-domain
 
 Feedstock license: BSD 3-Clause
 
@@ -22,7 +22,7 @@ Current build status
     <td>
       <details>
         <summary>
-          <a href="https://dev.azure.com/zeroae/feedstock-builds/_build/latest?definitionId=&branchName=master">
+          <a href="https://dev.azure.com/zeroae/feedstock-builds/_build/latest?definitionId=1&branchName=master">
             <img src="https://dev.azure.com/zeroae/feedstock-builds/_apis/build/status/darknet-feedstock?branchName=master">
           </a>
         </summary>
@@ -31,35 +31,35 @@ Current build status
           <tbody><tr>
               <td>linux_cuda_compiler_version10.0</td>
               <td>
-                <a href="https://dev.azure.com/zeroae/feedstock-builds/_build/latest?definitionId=&branchName=master">
+                <a href="https://dev.azure.com/zeroae/feedstock-builds/_build/latest?definitionId=1&branchName=master">
                   <img src="https://dev.azure.com/zeroae/feedstock-builds/_apis/build/status/darknet-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_version10.0" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_cuda_compiler_version10.1</td>
               <td>
-                <a href="https://dev.azure.com/zeroae/feedstock-builds/_build/latest?definitionId=&branchName=master">
+                <a href="https://dev.azure.com/zeroae/feedstock-builds/_build/latest?definitionId=1&branchName=master">
                   <img src="https://dev.azure.com/zeroae/feedstock-builds/_apis/build/status/darknet-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_version10.1" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_cuda_compiler_version10.2</td>
               <td>
-                <a href="https://dev.azure.com/zeroae/feedstock-builds/_build/latest?definitionId=&branchName=master">
+                <a href="https://dev.azure.com/zeroae/feedstock-builds/_build/latest?definitionId=1&branchName=master">
                   <img src="https://dev.azure.com/zeroae/feedstock-builds/_apis/build/status/darknet-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_version10.2" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_cuda_compiler_version9.2</td>
               <td>
-                <a href="https://dev.azure.com/zeroae/feedstock-builds/_build/latest?definitionId=&branchName=master">
+                <a href="https://dev.azure.com/zeroae/feedstock-builds/_build/latest?definitionId=1&branchName=master">
                   <img src="https://dev.azure.com/zeroae/feedstock-builds/_apis/build/status/darknet-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_version9.2" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_cuda_compiler_versionNone</td>
               <td>
-                <a href="https://dev.azure.com/zeroae/feedstock-builds/_build/latest?definitionId=&branchName=master">
+                <a href="https://dev.azure.com/zeroae/feedstock-builds/_build/latest?definitionId=1&branchName=master">
                   <img src="https://dev.azure.com/zeroae/feedstock-builds/_apis/build/status/darknet-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_versionNone" alt="variant">
                 </a>
               </td>
@@ -97,7 +97,6 @@ Current release info
 | [![Conda Recipe](https://img.shields.io/badge/recipe-darknet-green.svg)](https://anaconda.org/conda-forge/darknet) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/darknet.svg)](https://anaconda.org/conda-forge/darknet) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/darknet.svg)](https://anaconda.org/conda-forge/darknet) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/darknet.svg)](https://anaconda.org/conda-forge/darknet) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-darknet--cpu-green.svg)](https://anaconda.org/conda-forge/darknet-cpu) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/darknet-cpu.svg)](https://anaconda.org/conda-forge/darknet-cpu) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/darknet-cpu.svg)](https://anaconda.org/conda-forge/darknet-cpu) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/darknet-cpu.svg)](https://anaconda.org/conda-forge/darknet-cpu) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-darknet--gpu-green.svg)](https://anaconda.org/conda-forge/darknet-gpu) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/darknet-gpu.svg)](https://anaconda.org/conda-forge/darknet-gpu) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/darknet-gpu.svg)](https://anaconda.org/conda-forge/darknet-gpu) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/darknet-gpu.svg)](https://anaconda.org/conda-forge/darknet-gpu) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-libdarknet-green.svg)](https://anaconda.org/conda-forge/libdarknet) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/libdarknet.svg)](https://anaconda.org/conda-forge/libdarknet) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/libdarknet.svg)](https://anaconda.org/conda-forge/libdarknet) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/libdarknet.svg)](https://anaconda.org/conda-forge/libdarknet) |
 
 Installing darknet
 ==================
@@ -108,10 +107,10 @@ Installing `darknet` from the `conda-forge` channel can be achieved by adding `c
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `darknet, darknet-cpu, darknet-gpu, libdarknet` can be installed with:
+Once the `conda-forge` channel has been enabled, `darknet, darknet-cpu, darknet-gpu` can be installed with:
 
 ```
-conda install darknet darknet-cpu darknet-gpu libdarknet
+conda install darknet darknet-cpu darknet-gpu
 ```
 
 It is possible to list all of the versions of `darknet` available on your platform with:
