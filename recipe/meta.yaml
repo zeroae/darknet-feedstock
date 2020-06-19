@@ -15,8 +15,8 @@ source:
   # NOTE: Upstream repo is very large.
   #       If build fails to pull the correct revision, increase the git-depth
   git_depth: 1
-  #patches:
-  #  -  0001-Accept-a-different-toolchain.patch
+  patches:
+    -  0001-Accept-a-different-toolchain.patch
 
 build:
   number: 0
@@ -45,7 +45,7 @@ test:
     - test -x $PREFIX/bin/darknet
     - test -f $PREFIX/include/darknet.h
     - test -f $PREFIX/lib/libdarknet.so
-    - test -f $PREFIX/lib/libdarknet.a
+      # - test -f $PREFIX/lib/libdarknet.a
     - darknet
 
 outputs:
@@ -54,7 +54,7 @@ outputs:
       - bin/darknet
       - include/darknet.h
       - lib/libdarknet.so
-      - lib/libdarknet.a
+        # - lib/libdarknet.a
 
   - name: {{ name|lower }}-gpu  # [cuda_compiler_version != "None"]
   - name: {{ name|lower }}-cpu  # [cuda_compiler_version == "None"]
@@ -64,9 +64,8 @@ outputs:
 
 about:
   home: https://pjreddie.com/darknet
-  license: MIT
-  license_family: MIT
-  license_file: LICENSE.mit
+  license: LicenseRef-darknet-public-domain
+  license_file: LICENSE
   summary: Darknet is an open source neural network framework written in C and CUDA.
 
   dev_url: https://github.com/pjreddie/darknet
