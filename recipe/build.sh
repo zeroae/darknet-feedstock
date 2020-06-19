@@ -11,7 +11,7 @@ OPTS=""
 if [[ "${cuda_compiler_version}" != "None" ]]; then
   GPU=1
   CUDNN=1
-  CUDNN_HALF=1
+  CUDNN_HALF=0
 fi
 
 make LIBSO=1 GPU=$GPU CUDNN=$CUDNN CUDNN_HALF=$CUDNN_HALF $AVX=$AVX OPENMP=$OPENMP OPTS=$OPTS vars all
