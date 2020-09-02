@@ -22,6 +22,8 @@ pin_run_as_build:
   cudnn:
     min_pin: x.x
     max_pin: x
+target_platform:
+- linux-64
 zip_keys:
 - - cuda_compiler_version
   - docker_image
