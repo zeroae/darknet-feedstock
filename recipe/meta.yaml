@@ -19,7 +19,7 @@ source:
     -  0001-Accept-a-different-toolchain.patch
 
 build:
-  number: 2
+  number: 1
   skip: True  # [not linux]
 
 requirements:
