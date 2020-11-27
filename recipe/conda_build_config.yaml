@@ -3,6 +3,6 @@ channel_sources:
 channel_targets:
   - zeroae main
 c_compiler_version:
-  - 8
+  - 7
 cxx_compiler_version:
-  - 8
+  - 7
