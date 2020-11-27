@@ -14,7 +14,7 @@ source:
   git_rev: {{ git_rev }}
   # NOTE: Upstream repo is very large.
   #       If build fails to pull the correct revision, increase the git-depth
-  git_depth: 10
+  git_depth: 200
   patches:
     -  0001-Accept-a-different-toolchain.patch
 
