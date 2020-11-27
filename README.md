@@ -5,11 +5,11 @@ Home: https://pjreddie.com/darknet
 
 Package license: LicenseRef-darknet-public-domain
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/zeroae/darknet-feedstock/blob/master/LICENSE.txt)
 
 Summary: Darknet is an open source neural network framework written in C and CUDA.
 
-
+Development: https://github.com/AlexeyAB/darknet
 
 Current build status
 ====================
