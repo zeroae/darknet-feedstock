@@ -2,3 +2,7 @@ channel_sources:
   - zeroae,conda-forge,defaults
 channel_targets:
   - zeroae main
+c_compiler_version:
+  - 7
+cxx_compiler_version:
+  - 7

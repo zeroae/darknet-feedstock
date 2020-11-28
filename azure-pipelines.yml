@@ -2,8 +2,5 @@
 # update the conda-forge.yml and/or the recipe/meta.yaml.
 # -*- mode: yaml -*-
 
-variables:
-  - group: anaconda-org
-
 jobs:
   - template: ./.azure-pipelines/azure-pipelines-linux.yml
