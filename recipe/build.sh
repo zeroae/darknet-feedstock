@@ -26,8 +26,8 @@ if [[ "${cuda_compiler_version}" != "None" ]]; then
         -gencode arch=compute_72,code=[sm_72,compute_72]"
 fi
 
-if [[ "${cuda_compiler_version}" > "10.0" ]];
-  ARCH="${ARCH}-gencode arch=compute_75,code=[sm_75,compute_75]"
+if [[ "${cuda_compiler_version}" > "10.0" ]]; then
+  ARCH="${ARCH} -gencode arch=compute_75,code=[sm_75,compute_75]"
 fi
 
 make LIBSO=1 GPU=$GPU CUDNN=$CUDNN CUDNN_HALF=$CUDNN_HALF ARCH="$ARCH" $AVX=$AVX OPENMP=$OPENMP OPTS=$OPTS vars all
